@@ -6,10 +6,10 @@ const { Pool } = pkg;
 dotenv.config();
 
 const pool = new Pool({
-    host :"aws-0-ap-southeast-1.pooler.supabase.com",
-    user : "postgres.fechvafnbuiaulcnrwrs",
-    port : 5432,
-    password : "joans88joejon",
-    database : "postgres"
+    host :process.env.DB_HOST,
+    user : process.env.DB_USER,
+    port : process.env.DB_PORT,
+    password : process.env.DB_PASSWORD,
+    database : process.env.DB_DATABASE
 })
 export default pool ;
