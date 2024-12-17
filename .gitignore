@@ -19,6 +19,7 @@ Thumbs.db
 # IDE files
 .vscode/
 .idea/
+Dockerfile
 
 # Test coverage
 coverage/
